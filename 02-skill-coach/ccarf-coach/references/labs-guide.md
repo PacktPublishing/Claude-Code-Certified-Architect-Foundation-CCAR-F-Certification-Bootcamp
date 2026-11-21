@@ -9,7 +9,7 @@ login (`claude` once) or `ANTHROPIC_API_KEY` in `.env`; Lab 5 needs a key.
 
 | Chapter | Lab | Folder | Needs |
 |---|---|---|---|
-| Day 1, opening: the exam and how to pass it | Prompt vs. hook on a refund | `quickwin/` | `gates` needs nothing |
+| Day 1, opening: the exam and how to pass it | An agent with built-in tools builds a greeting animation | `quickwin/greeter/` | subscription or key |
 | Day 1, Chapter B: MCP and the Agent SDK | Identity gate before a refund | `lab_03/`, `quickwin/` | nothing for part A |
 | Day 1, Chapter E: Agentic Architecture Patterns | Four searchers in one response | `lab_02/` | subscription or key |
 | Day 1, Chapter F: Tool Design and MCP Patterns | MCP server with structured errors | `lab_01/` | nothing for part A |
