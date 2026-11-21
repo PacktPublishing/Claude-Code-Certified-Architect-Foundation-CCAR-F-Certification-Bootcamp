@@ -35,7 +35,7 @@ in `quickwin/`.
 ```
 01-labs/
 ├── pyproject.toml            the lab environment (one for all six labs)
-├── .env.example              copy to .env: your credential and the model names
+├── .env.example              the model names; copy to .env to add an API key
 ├── lab_01/                   Lab 1, developer productivity toolset
 │   ├── lab01_part_a.ipynb      MCP server with structured errors, no API calls
 │   └── lab01_part_b.ipynb      the same server driven from the Agent SDK
@@ -152,8 +152,9 @@ the Agent SDK, the Anthropic SDK, the MCP SDK, Pydantic, JupyterLab and the rest
 it again whenever the lock file changes; it only installs what is missing. You never need to
 activate the environment: `uv run <command>` runs anything inside it.
 
-Then create your settings file and choose how you sign in ("Subscription or API key" below explains
-the choice):
+Then choose how you sign in ("Subscription or API key" below explains the choice). On a
+Claude subscription there is nothing more to set up here: the notebooks read the model
+names from `.env.example`. On API billing, create your settings file and put your key in it:
 
 ```bash
 cp .env.example .env
@@ -167,7 +168,7 @@ when you get to it:
 ```bash
 cd quickwin
 uv sync
-cp .env.example .env
+cp .env.example .env    # only on API billing; a subscription needs no .env here either
 ```
 
 The quick win and the refund demo are scripts, not notebooks. Run them from `01-labs/quickwin`:
@@ -198,7 +199,7 @@ uv run jupyter lab
 ```
 
 Either way, run the notebook from its own folder: the cells find `pyproject.toml` and
-`.env` relative to the notebook's location. The first cell of each lab prints which
+`.env` (or `.env.example` when there is no `.env`) relative to the notebook's location. The first cell of each lab prints which
 credential it found.
 
 ### Subscription or API key
@@ -230,10 +231,10 @@ keys, so a subscription cannot pay for it.
 
 #### Choosing
 
-**On a Claude subscription** (the cheapest route if you already have one): leave both
-credential lines in `.env` blank, run `claude` once and sign in. Labs 1, 2, 3 and 6 and the
-quick win then run on your plan. For Lab 5, add an API key to `.env` for that lab only, then
-blank it again afterwards, because a key set in `.env` outranks your login for every other
+**On a Claude subscription** (the cheapest route if you already have one): run `claude`
+once and sign in, and skip `.env` (or leave both credential lines in it blank). Labs 1, 2, 3 and 6 and the
+quick win then run on your plan. For Lab 5, create `.env` and add an API key for that lab only,
+then blank it again afterwards, because a key set in `.env` outranks your login for every other
 lab too.
 
 **On API billing:** put a Console key in `ANTHROPIC_API_KEY` in `.env`, and every lab
