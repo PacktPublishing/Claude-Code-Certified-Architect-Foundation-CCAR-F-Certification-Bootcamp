@@ -4,18 +4,18 @@ Six guided labs, one per official exam scenario, plus the small refund demo I us
 Day 1 quick win. They are the same labs as the recorded course: you keep them after the
 cohort.
 
-## Which lab goes with which session
+## Which lab goes with which chapter
 
-| Session | Demo | Folder | Needs |
+| Chapter | Demo | Folder | Needs |
 |---|---|---|---|
-| Day 1, 1. The exam and how to pass it | Prompt vs. hook on a refund | `quickwin/` | subscription or key (`gates` needs nothing) |
-| Day 1, 3. Model Context Protocol in practice | An MCP server with structured errors | `lab_01/` part A, then part B | nothing for part A |
-| Day 1, 4. The agentic loop and the Agent SDK | An agent, a tool and a hook from zero | `quickwin/steps/` | subscription or key |
-| Day 1, 5. Multi-agent orchestration | Four searchers in one response, then a formatter | `lab_02/` | subscription or key |
-| Day 1, 6. Enforcement, handoff, decomposition and sessions | An identity gate that blocks a refund | `lab_03/` parts A and B | nothing for part A |
-| Day 2, 3. Working modes and CI/CD | Claude Code reviewing a pull request | `lab_04/` | a GitHub account |
-| Day 2, 5. Structured output, validation and scale | Forced tool-schema extraction | `lab_05/` | an API key |
-| Day 2, 6. Context and reliability | Compaction, resume and fork in a real project | `lab_06/` parts A and B | Claude Code signed in |
+| Day 1, opening: the exam and how to pass it | Prompt vs. hook on a refund | `quickwin/` | subscription or key (`gates` needs nothing) |
+| Day 1, Chapters A and B | An agent, a tool and a hook from zero | `quickwin/steps/` | subscription or key |
+| Day 1, Chapter B: MCP and the Agent SDK | An identity gate that blocks a refund | `lab_03/` parts A and B, `quickwin/` | nothing for part A |
+| Day 1, Chapter E: Agentic Architecture Patterns | Four searchers in one response, then a formatter | `lab_02/` | subscription or key |
+| Day 1, Chapter F: Tool Design and MCP Patterns | An MCP server with structured errors | `lab_01/` part A, then part B | nothing for part A |
+| Day 2, Chapter G: Claude Code Workflow Patterns | Claude Code reviewing a pull request | `lab_04/` | a GitHub account |
+| Day 2, Chapter H: Prompting and Structured Output Patterns | Forced tool-schema extraction | `lab_05/` | an API key |
+| Day 2, Chapter I: Context and Reliability Patterns | Compaction, resume and fork in a real project | `lab_06/` parts A and B | Claude Code signed in |
 
 ## Set up once
 

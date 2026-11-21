@@ -7,7 +7,7 @@ Format of every item:
 
 - **Header:** `Q-<task>` and the task title.
 - **Meta:** domain, scenario, type (single choice, or choose two).
-- **Cohort:** the cohort session that teaches the task.
+- **Cohort:** the cohort chapter that teaches the task.
 - **Stem and options:** show these to the user exactly as written.
 - **Answer, Evidence, Why it wins, Why the others fail, Learn more:** show only after the
   user has answered.
@@ -19,7 +19,7 @@ Format of every item:
 **Meta:** Domain 1, Agentic architecture and orchestration | Scenario: Developer Productivity
 with Claude | Type: single choice
 
-**Cohort:** Day 1, session 4.
+**Cohort:** Day 1, Chapter E (builds on Chapters A and B).
 
 Before switching to the Agent SDK's built-in loop, your team writes its own agentic loop over
 the Messages API for a tool that helps engineers explore unfamiliar codebases. After each
@@ -71,7 +71,7 @@ has finished. A cap is still worth having, as a guard against runaway loops, not
 **Meta:** Domain 1, Agentic architecture and orchestration | Scenario: Multi-Agent Research
 System | Type: single choice
 
-**Cohort:** Day 1, session 5.
+**Cohort:** Day 1, Chapter E (builds on Chapters A and B).
 
 Your coordinator researches "the effect of heat pumps on household energy bills in Europe". It
 assigns three subtopics to the search and analysis subagents: installation costs, running costs
@@ -119,7 +119,7 @@ sufficient coverage rather than after a fixed number of rounds.
 **Meta:** Domain 1, Agentic architecture and orchestration | Scenario: Multi-Agent Research
 System | Type: choose two
 
-**Cohort:** Day 1, session 5.
+**Cohort:** Day 1, Chapter E (builds on Chapters A and B).
 
 A coordinator built with the Claude Agent SDK researches a topic with three search subagents
 and then a synthesis subagent. Two problems show up in testing. Runs are slow, because the
@@ -170,7 +170,7 @@ include it. Current Claude Code releases have renamed it `Agent`; `Task` is stil
 **Meta:** Domain 1, Agentic architecture and orchestration | Scenario: Customer Support
 Resolution Agent | Type: choose two
 
-**Cohort:** Day 1, session 6.
+**Cohort:** Day 1, Chapter E (builds on Chapters A and B).
 
 Your support agent escalates billing disputes it cannot resolve by calling
 `escalate_to_human`, whose only input is a free-text `note`. Human agents work in a case tool
@@ -222,7 +222,7 @@ with an amount" is a guarantee, not a preference.
 **Meta:** Domain 1, Agentic architecture and orchestration | Scenario: Customer Support
 Resolution Agent | Type: single choice
 
-**Cohort:** Day 1, session 6.
+**Cohort:** Day 1, Chapter E (builds on Chapters A and B).
 
 Your support agent decides whether orders fall inside the 30-day return window. `lookup_order`
 comes from a vendor's MCP server and returns `delivered_at` as a Unix timestamp. Your
@@ -270,7 +270,7 @@ tool, including third-party servers you do not own.
 **Meta:** Domain 1, Agentic architecture and orchestration | Scenario: Claude Code for
 Continuous Integration | Type: single choice
 
-**Cohort:** Day 1, session 6.
+**Cohort:** Day 1, Chapter E (builds on Chapters A and B).
 
 Your CI pipeline runs Claude Code on every pull request to the payments service. Each review
 must cover the same four aspects: input validation, error handling, personal data in logs, and
@@ -318,7 +318,7 @@ on every run.
 **Meta:** Domain 1, Agentic architecture and orchestration | Scenario: Developer Productivity
 with Claude | Type: single choice
 
-**Cohort:** Day 1, session 6.
+**Cohort:** Day 1, Chapter E (builds on Chapters A and B).
 
 An engineer spent most of a day in a Claude Code session named `ledger-analysis`, mapping a
 legacy ledger service: its modules, call paths and test gaps. Nobody has changed the code
@@ -368,7 +368,7 @@ uses the name as a search term for the session picker, so a script resumes by se
 **Meta:** Domain 2, Tool design and MCP integration | Scenario: Customer Support Resolution
 Agent | Type: single choice
 
-**Cohort:** Day 1, session 2.
+**Cohort:** Day 1, Chapter F (builds on Chapters A and B).
 
 Your support agent, built with the Claude Agent SDK, has a custom MCP tool `account_lookup`. It
 takes a `customer_id` and a `view` enum (`profile`, `billing_history`, `open_disputes`) and
@@ -419,7 +419,7 @@ descriptions, not before.
 **Meta:** Domain 2, Tool design and MCP integration | Scenario: Developer Productivity with
 Claude | Type: single choice
 
-**Cohort:** Day 1, session 3.
+**Cohort:** Day 1, Chapter F (builds on Chapters A and B).
 
 Your team's MCP server exposes `search_tickets` to an internal engineering agent. When the
 ticketing API times out, the tool catches the exception and returns `{"results": []}` as a
@@ -464,7 +464,7 @@ query that succeeded and matched nothing.
 **Meta:** Domain 2, Tool design and MCP integration | Scenario: Structured Data Extraction |
 Type: choose two
 
-**Cohort:** Day 1, sessions 2 and 4.
+**Cohort:** Day 1, Chapter F (builds on Chapters A and B).
 
 Your pipeline sends each scanned document to Claude with four tools: `detect_language`,
 `extract_invoice`, `extract_receipt` and `extract_contract`, all on `tool_choice: auto`. The
@@ -519,7 +519,7 @@ exam's answer is unchanged.
 **Meta:** Domain 2, Tool design and MCP integration | Scenario: Developer Productivity with
 Claude | Type: single choice
 
-**Cohort:** Day 1, session 3.
+**Cohort:** Day 1, Chapter F (builds on Chapters A and B).
 
 Your team's agent, built with the Claude Agent SDK, helps engineers operate a legacy platform.
 A custom MCP server exposes `search_runbooks` and `get_runbook`. Traces show that on almost
@@ -568,7 +568,7 @@ one.
 **Meta:** Domain 2, Tool design and MCP integration | Scenario: Developer Productivity with
 Claude | Type: single choice
 
-**Cohort:** Day 1, session 2.
+**Cohort:** Day 1, Chapter F (builds on Chapters A and B).
 
 An engineer asks your codebase agent to find every caller that would break if the signature
 of `parse_amount` in `billing/money.py` changes. Most services do not import from
@@ -616,7 +616,7 @@ default tool set and search with `grep` through Bash; the exam's answer is still
 **Meta:** Domain 3, Claude Code configuration and workflows | Scenario: Code Generation with
 Claude Code | Type: single choice
 
-**Cohort:** Day 2, session 2.
+**Cohort:** Day 2, Chapter G (builds on Chapters C and D).
 
 Your monorepo has three packages: `billing-api`, `admin-ui` and `mobile-sdk`. The security
 team owns `standards/secrets-handling.md`, the platform team owns `standards/api-conventions.md`
@@ -673,7 +673,7 @@ syntax is `@` directly followed by a path.
 **Meta:** Domain 3, Claude Code configuration and workflows | Scenario: Code Generation with
 Claude Code | Type: choose two
 
-**Cohort:** Day 2, session 2.
+**Cohort:** Day 2, Chapter G (builds on Chapters C and D).
 
 Your team has a project skill at `.claude/skills/dep-audit/SKILL.md` that scans every package
 manifest and lists outdated dependencies, licence data and security advisories. Two
@@ -723,7 +723,7 @@ is a personal skill shadowing the project one.
 **Meta:** Domain 3, Claude Code configuration and workflows | Scenario: Code Generation with
 Claude Code | Type: single choice
 
-**Cohort:** Day 2, session 2.
+**Cohort:** Day 2, Chapter G (builds on Chapters C and D).
 
 Last quarter your team split a 600-line `CLAUDE.md` into topic files under `.claude/rules/`:
 `typescript.md`, `testing.md` and `terraform.md`, none with frontmatter. Developers now find
@@ -771,7 +771,7 @@ Terraform edits still get them.
 **Meta:** Domain 3, Claude Code configuration and workflows | Scenario: Code Generation with
 Claude Code | Type: single choice
 
-**Cohort:** Day 2, session 3.
+**Cohort:** Day 2, Chapter G (builds on Chapters C and D).
 
 Your team asks Claude Code to replace a home-grown logging module with a standard library
 across about 60 files in three services. There are two viable approaches: wrap the new library
@@ -815,7 +815,7 @@ written; then the approved plan is executed directly.
 **Meta:** Domain 3, Claude Code configuration and workflows | Scenario: Code Generation with
 Claude Code | Type: single choice
 
-**Cohort:** Day 2, session 3.
+**Cohort:** Day 2, Chapter G (builds on Chapters C and D).
 
 Claude Code has written a client for a partner's rate-limited API, used by a sync job with a
 five-minute deadline. Your review finds three problems. The retry loop retries HTTP 429
@@ -861,7 +861,7 @@ one undoes.
 **Meta:** Domain 3, Claude Code configuration and workflows | Scenario: Claude Code for
 Continuous Integration | Type: single choice
 
-**Cohort:** Day 2, session 3.
+**Cohort:** Day 2, Chapter G (builds on Chapters C and D).
 
 Your pipeline pipes each pull request's diff into `claude -p` with a review prompt. A Python
 script then uses regular expressions to pull the file, line, severity and message out of the
@@ -912,7 +912,7 @@ present before posting.
 **Meta:** Domain 4, Prompt engineering and structured output | Scenario: Claude Code for
 Continuous Integration | Type: single choice
 
-**Cohort:** Day 2, session 4.
+**Cohort:** Day 2, Chapter H (builds on Chapter A).
 
 A pull request review step in your CI pipeline runs Claude Code with this instruction: "Review
 the diff for problems. Be conservative and only report findings you are highly confident
@@ -968,7 +968,7 @@ because it replaces the criteria.
 **Meta:** Domain 4, Prompt engineering and structured output | Scenario: Multi-Agent Research
 System | Type: single choice
 
-**Cohort:** Day 2, session 4.
+**Cohort:** Day 2, Chapter H (builds on Chapter A).
 
 In your multi-agent research system, the document analysis subagent extracts `sample_size` and
 `study_design` from each paper into a schema where both fields are nullable. Its prompt explains
@@ -1018,7 +1018,7 @@ rather than which heading to match, and generalises to new papers.
 **Meta:** Domain 4, Prompt engineering and structured output | Scenario: Structured Data
 Extraction | Type: single choice
 
-**Cohort:** Day 2, session 5.
+**Cohort:** Day 2, Chapter H (builds on Chapter A).
 
 You extract supplier invoices with a forced `extract_invoice` tool whose JSON schema marks
 every field as a required string. About one invoice in twenty has no purchase order number
@@ -1059,7 +1059,7 @@ description gives the model a correct way to say "not present".
 **Meta:** Domain 4, Prompt engineering and structured output | Scenario: Structured Data
 Extraction | Type: choose two
 
-**Cohort:** Day 2, session 5.
+**Cohort:** Day 2, Chapter H (builds on Chapter A).
 
 Your pipeline extracts vehicle repair estimates for an insurer with a forced tool call, then
 validates each record in code. A record that fails validation is retried once, with the
@@ -1110,7 +1110,7 @@ at all.
 **Meta:** Domain 4, Prompt engineering and structured output | Scenario: Structured Data
 Extraction | Type: single choice
 
-**Cohort:** Day 2, session 5.
+**Cohort:** Day 2, Chapter H (builds on Chapter A).
 
 Each night you submit 2,000 supplier contracts to the Message Batches API, one forced tool call
 extraction request per contract, with the contract ID as `custom_id`. This morning's results:
@@ -1158,7 +1158,7 @@ documents, and resend the expired ones as they were.
 **Meta:** Domain 4, Prompt engineering and structured output | Scenario: Claude Code for
 Continuous Integration | Type: single choice
 
-**Cohort:** Day 2, session 5.
+**Cohort:** Day 2, Chapter H (builds on Chapter A).
 
 Your CI pipeline uses `claude -p` to write unit tests for changed modules. A second step then
 resumes that same session by its session ID and asks: "Review the tests you just wrote for
@@ -1206,7 +1206,7 @@ artefact on its merits, like a human peer reviewer, and catches what the author 
 **Meta:** Domain 5, Context management and reliability | Scenario: Customer Support Resolution
 Agent | Type: single choice
 
-**Cohort:** Day 2, session 6.
+**Cohort:** Day 2, Chapter I (builds on Chapter A).
 
 Your support agent, built with the Claude Agent SDK, summarises older turns once the history
 passes a token threshold. In one long session a customer raised two issues: order ORD-4471
@@ -1255,7 +1255,7 @@ issues, and the block is short enough to resend on every turn.
 **Meta:** Domain 5, Context management and reliability | Scenario: Customer Support Resolution
 Agent | Type: single choice
 
-**Cohort:** Day 2, session 6.
+**Cohort:** Day 2, Chapter I (builds on Chapter A).
 
 A customer writes: "My parcel is three days late and I want to speak to a person, not a bot."
 The delay is a routine carrier issue that your support agent could resolve on its own by
@@ -1292,7 +1292,7 @@ what the agent already has, so the human does not start from nothing.
 **Meta:** Domain 5, Context management and reliability | Scenario: Multi-Agent Research System
 | Type: single choice
 
-**Cohort:** Day 2, session 6.
+**Cohort:** Day 2, Chapter I (builds on Chapter A).
 
 In your research system, the document-analysis subagent receives 40 regulatory filings per run.
 Logs show two kinds of failure. The filing archive's API sometimes returns rate-limit errors
@@ -1345,7 +1345,7 @@ the gap.
 **Meta:** Domain 5, Context management and reliability | Scenario: Code Generation with Claude
 Code | Type: single choice
 
-**Cohort:** Day 2, session 6.
+**Cohort:** Day 2, Chapter I (builds on Chapter A).
 
 A developer is using one long Claude Code session to understand a legacy billing module before
 a refactor. Early on, Claude Code found that `InvoiceBuilder` in `src/billing/builder.py` is
@@ -1394,7 +1394,7 @@ re-reading it before each answer is what counteracts the degradation.
 **Meta:** Domain 5, Context management and reliability | Scenario: Structured Data Extraction |
 Type: choose two
 
-**Cohort:** Day 2, session 6.
+**Cohort:** Day 2, Chapter I (builds on Chapter A).
 
 Your extraction system processes supplier invoices, purchase orders and delivery notes. The
 model outputs a confidence score for each field, and the review threshold of 0.9 was calibrated
@@ -1452,7 +1452,7 @@ qualifiers are what items test.
 **Meta:** Domain 5, Context management and reliability | Scenario: Multi-Agent Research System
 | Type: single choice
 
-**Cohort:** Day 2, session 6.
+**Cohort:** Day 2, Chapter I (builds on Chapter A).
 
 Your research system's search subagents return their findings as short prose summaries, such as
 "A national survey found 22% of small firms use AI tools" and "An industry study puts small-firm

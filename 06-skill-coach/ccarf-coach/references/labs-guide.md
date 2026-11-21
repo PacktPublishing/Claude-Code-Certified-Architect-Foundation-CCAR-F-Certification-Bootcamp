@@ -5,18 +5,19 @@ The cohort's code lives in `03-labs/`. One environment covers the six labs
 `03-labs/quickwin/` (`cd 03-labs/quickwin && uv sync`). Credentials: a Claude subscription
 login (`claude` once) or `ANTHROPIC_API_KEY` in `.env`; Lab 5 needs a key.
 
-## Which lab goes with which session
+## Which lab goes with which chapter
 
-| Session | Lab | Folder | Needs |
+| Chapter | Lab | Folder | Needs |
 |---|---|---|---|
-| Day 1, 1. The exam and how to pass it | Prompt vs. hook on a refund | `quickwin/` | `gates` needs nothing |
-| Day 1, 3. Model Context Protocol in practice | MCP server with structured errors | `lab_01/` | nothing for part A |
-| Day 1, 4. The agentic loop and the Agent SDK | Agent, tool and hook from zero | `quickwin/steps/` | subscription or key |
-| Day 1, 5. Multi-agent orchestration | Four searchers in one response | `lab_02/` | subscription or key |
-| Day 1, 6. Enforcement, handoff, decomposition and sessions | Identity gate before a refund | `lab_03/` | nothing for part A |
-| Day 2, 3. Working modes and CI/CD | Claude Code reviewing a pull request | `lab_04/` | a GitHub account |
-| Day 2, 5. Structured output, validation and scale | Forced tool-schema extraction | `lab_05/` | an API key |
-| Day 2, 6. Context and reliability | Compaction, resume and fork | `lab_06/` | Claude Code signed in |
+| Day 1, opening: the exam and how to pass it | Prompt vs. hook on a refund | `quickwin/` | `gates` needs nothing |
+| Day 1, Chapter B: MCP and the Agent SDK | Identity gate before a refund | `lab_03/`, `quickwin/` | nothing for part A |
+| Day 1, Chapter E: Agentic Architecture Patterns | Four searchers in one response | `lab_02/` | subscription or key |
+| Day 1, Chapter F: Tool Design and MCP Patterns | MCP server with structured errors | `lab_01/` | nothing for part A |
+| Day 2, Chapter G: Claude Code Workflow Patterns | Claude Code reviewing a pull request | `lab_04/` | a GitHub account |
+| Day 2, Chapter H: Prompting and Structured Output Patterns | Forced tool-schema extraction | `lab_05/` | an API key |
+| Day 2, Chapter I: Context and Reliability Patterns | Compaction, resume and fork | `lab_06/` | Claude Code signed in |
+
+The agent, tool and hook built from zero (`quickwin/steps/`) go with Day 1, Chapters A and B.
 
 ## The six labs
 

@@ -46,7 +46,7 @@ JSON schema.
 
 **In the cohort labs.** Lab 5 (`03-labs/lab_05/`): forced tool-schema extraction with
 nullable fields, `unclear` and `other`, over short supplier documents. Taught on Day 2,
-session 5; the tool-use loop on Day 1, session 2.
+Chapter H; the tool-use loop on Day 1, Chapter A.
 
 **Links.**
 https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview
@@ -86,7 +86,7 @@ reporting a failure as an empty success.
 **In the cohort labs.** Lab 1 part A (`03-labs/lab_01/`) builds an MCP server with
 structured errors and registers it in Claude Code with `.mcp.json`. The quick win's
 `03-labs/quickwin/support/backend.py` and `demo_sdk/tools.py` return `errorCategory` and
-`isRetryable` on failure. Taught on Day 1, sessions 2 and 3.
+`isRetryable` on failure. Taught on Day 1, Chapters B and F.
 
 **Links.**
 https://modelcontextprotocol.io/introduction
@@ -134,7 +134,7 @@ subagent that "remembers" the coordinator's context.
 then `03-labs/quickwin/demo_sdk/hooks.py` (refund limit, record-and-block identity gate,
 `PostToolUse` normaliser). Lab 2 (`03-labs/lab_02/`): a coordinator spawning four searchers
 in one response. Lab 3 (`03-labs/lab_03/`): the identity gate and structured handoff.
-Taught on Day 1, sessions 4 to 6.
+Taught on Day 1, Chapters B and E.
 
 **Links.**
 https://code.claude.com/docs/en/agent-sdk/overview
@@ -183,7 +183,7 @@ folder.
 **In the cohort labs.** `03-labs/quickwin/demo_claude_code/` (command hooks in
 `.claude/settings.json`), Lab 4 (`03-labs/lab_04/`, review in CI with the GitHub action),
 Lab 6 (`03-labs/lab_06/`, a real project: plan, compact, resume, fork). This coach is itself
-a `SKILL.md`. Taught on Day 2, sessions 2 and 3.
+a `SKILL.md`. Taught on Day 2, Chapters C, D and G.
 
 **Links.**
 https://code.claude.com/docs/en/memory
